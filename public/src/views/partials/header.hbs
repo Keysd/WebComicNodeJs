@@ -1,0 +1,73 @@
+<nav class="bg-nav-primary w-full relative z-30">
+    <div class="nav-home container line-h-36 block lap:hidden">
+        <a href="/" class="text-white list-none pl-2">Trang chủ</a>
+    </div>
+    <div class="container w-full flex justify-between items-center">
+        <ul class="nav-list flex flex-col w-screen hidden lap:flex-row lap:flex">
+            <li class="px-2 py-3 hover:bg-orange-300">
+                <a href="/" class="text-white">Trang chủ</a>
+            </li>
+            <li class="nav-item-category nav-item px-2 py-3 inline-block hover:bg-orange-300">
+                <div href="" class="nav-item-one text-white flex items-center">
+                    <span class="">Thể loại</span>
+                    <div class="my-caret ml-1"></div>
+                </div>
+                <div class="nav-item-child bg-white w-full left-0 top-full hidden static lap:absolute">
+                    <ul class="container w-full h-full py-8 grid grid-cols-3 gap-8 lap:grid-cols-8">
+                        <li class="">
+                            <a href="Action" class="whitespace-nowrap px-2 py-3 hover:text-orange-300">Action</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="nav-item-ratings nav-item px-2 py-3 inline-block hover:bg-orange-300">
+                <div href="" class="nav-item-one text-white flex items-center">
+                    <span class="">Xếp hạng</span>
+                    <div class="my-caret ml-1"></div>
+                </div>
+                <div class="nav-item-child bg-white w-full left-0 top-full hidden static lap:absolute">
+                    <ul class="container w-full h-full py-8 grid grid-cols-3 gap-8 lap:grid-cols-8">
+                        <li class="">
+                            <a href="/top/top-ngay.html" class="whitespace-nowrap px-2 py-3 hover:text-orange-300">Top ngày</a>
+                        </li>
+                        <li class="">
+                            <a href="/top/top-tuan.html" class="whitespace-nowrap px-2 py-3 hover:text-orange-300">Top tuần</a>
+                        </li>
+                        <li class="">
+                            <a href="/top/top-thang.html" class="whitespace-nowrap px-2 py-3 hover:text-orange-300">Top tháng</a>
+                        </li>
+                        <li class="">
+                            <a href="/top/truyen-yeu-thich.html" class="whitespace-nowrap px-2 py-3 hover:text-orange-300">Yêu thích</a>
+                        </li>
+                        <li class="">
+                            <a href="/top/truyen-moi-cap-nhat.html" class="whitespace-nowrap px-2 py-3 hover:text-orange-300">Mới cập nhập</a>
+                        </li>
+                        <li class="">
+                            <a href="/top/truyen-tranh-moi.html" class="whitespace-nowrap px-2 py-3 hover:text-orange-300">Truyện mới</a>
+                        </li>
+                        <li class="">
+                            <a href="/top/truyen-hoan-thanh.html" class="whitespace-nowrap px-2 py-3 hover:text-orange-300">Truyện full</a>
+                        </li>
+                        <li class="">
+                            <a href="/top/truyen-ngau-nhien.html" class="whitespace-nowrap px-2 py-3 hover:text-orange-300">Truyện ngẫu nhiên</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="px-2 py-3 hover:bg-orange-300">
+                <a href="" class="text-white">Con gái</a>
+            </li>
+            <li class="px-2 py-3 hover:bg-orange-300">
+                <a href="" class="text-white">Con trai</a>
+            </li>
+        </ul>
+        <div class="nav-menu-toggle h-auto w-10 absolute right-4 top-2 lap:hidden" id="toggle">
+            <svg class="nav-menu-sgv text-white lap:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="{1.5}" stroke="currentColor" className="w-6 h-6">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+            </svg>
+            <svg class="nav-close-sgv text-white hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+        </div>
+    </div>
+</nav>

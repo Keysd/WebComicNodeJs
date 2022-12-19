@@ -1,0 +1,20 @@
+{
+    "trailingComma": "all",
+    "tabWidth": 4,
+    "overrides": [
+        {
+            "files": "*.js",
+            "options": {
+                "semi": true,
+                "printWidth": 200,
+                "singleQuote": true
+            }
+        },
+        {
+            "files": ["*.html", "*.hbs"],
+            "options": {
+                "printWidth": 3000
+            }
+        }
+    ]
+}

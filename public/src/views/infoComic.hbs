@@ -1,0 +1,64 @@
+<div class="content container pt-0 tab:pt-4">
+    <div class="bg-slate-100 p-4 rounded-lg">
+        <div class="block my-2">
+            <a href="/" class="inline-block">Trang chủ</a>
+
+            <span class="mx-2">/</span>
+
+            <a href="" class="">{{comics.name}}</a>
+        </div>
+        <div class="flex flex-col lap:flex-row mx-4">
+            <div>
+                <img class="rounded overflow-hidden mr-6 mb-6" style="box-shadow: 0 0 8px 0 #757575" src="{{comics.avt}}" alt="" />
+            </div>
+            <div class="-translate-y-4">
+                <h1 class="text-2xl mb-4">{{comics.name}}</h1>
+                <div class="">
+                    <ul>
+                        <li class="flex my-2">
+                            <div class="w-28">Tác giả</div>
+                            <span>{{comics.author}}</span>
+                        </li>
+                        <li class="flex my-2">
+                            <div class="w-28">Tình trạng</div>
+                            <span>{{comics.status}}</span>
+                        </li>
+                        <li class="flex my-2">
+                            <div class="w-28">Lượt thích</div>
+                            <span>{{comics.numLike}}</span>
+                        </li>
+                        <li class="flex my-2">
+                            <div class="w-28">Lượt theo dõi</div>
+                            <span>{{comics.numFollow}}</span>
+                        </li>
+                        <li class="flex my-2">
+                            <div class="w-28">Lượt xem</div>
+                            <span>{{comics.numView}}</span>
+                        </li>
+                        {{! <li class="flex my-2">
+                            <div class="w-28">Thể loại</div>
+                            <span class="inline-block">Drama, Fantasy, Romance, School, Life, Psychological, Gender, Bender, Josei, Comic</span>
+                        </li> }}
+                    </ul>
+                </div>
+                <div class="">
+                    <div class="mt-4">
+                        <a href="{{replacePath this.linkFirstly '/truyen-tranh/' '/comic/truyen'}}" class="bg-nav-primary text-white py-2 px-4 rounded-sm">Đọc từ đầu</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-8 mx-4">
+            <span class="text-nav-primary text-xl">Giới thiệu</span>
+            <p class="text-gray-400">{{comics.introduce}}</p>
+        </div>
+        <div class="mt-8 mx-4">
+            <span class="text-nav-primary text-xl">Danh sách chapter</span>
+            <ul style="border: 1px solid #dddddd" class="rounded-sm mt-2 py-2">
+                {{#each comics.chapters}}
+                    <li class="seperate-bot mx-4 py-1 flex justify-between relative" style="color: #4a4a4a"><a href="{{replacePath this.linkChapters '/truyen-tranh/' '/comic/truyen'}}">{{this.nameChapters}}</a><span>{{this.dateChapters}}</span></li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+</div>

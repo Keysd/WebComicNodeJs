@@ -1,0 +1,36 @@
+<div class="content container pt-8">
+
+    <div class="wrap-content">
+        <div class="px-2">
+            <h1 class="leading-10 py-2 text-2xl">Truyện mới cập nhập</h1>
+        </div>
+        <ul class="grid mobM-cols-2 grid-cols-3 gap-2 px-2 tab:grid-cols-4 tab:gap-3 lap:grid-cols-5 lap:gap-4 des:grid-cols-6">
+            {{#each pageComics.lstcomic}}
+                <li class="content-item relative rounded-md overflow-hidden">
+                    <a href="{{replacePath this.links '/truyen-tranh/' '/comic/'}}" class="absolute top-0 left-0 right-0 bottom-0">
+                        <img class="w-full h-full" src="{{this.images}}" alt="{{this.names}}" />
+                        <div class="absolute bottom-0 left-0 right-0 top-3/4 text-base content-item-overlay py-2">
+                            <h1 class="px-2 text-white text-ellipsis whitespace-nowrap overflow-hidden hover:text-orange-400">
+                                <span>{{this.names}}</span>
+                            </h1>
+                            <a href="{{replacePath this.linkLastChaps '/truyen-tranh/' '/comic/truyen'}}" class="absolute bottom-2 text-sm px-2 text-white text-ellipsis whitespace-nowrap overflow-hidden hover:text-orange-400">
+                                <span>{{this.chapters}}</span>
+                            </a>
+                        </div>
+                        <div class="absolute top-2 left-2 bg-orange-400 rounded">
+                            <span class="p-4 text-white">{{this.timeAgos}}</span>
+                        </div>
+                    </a>
+                </li>
+            {{/each}}
+        </ul>
+        <div style="flex-wrap: wrap;" class="flex justify-center mt-4">
+            {{#each pageComics.btnPages}}
+
+                <a href="{{replacePath this.btnLink '/truyen-moi-cap-nhat/' '/'}}" class="btnLink bg-nav-primary text-white p-2 rounded-lg text-center mx-2 my-2" style="min-width: 48px">{{this.btnName}}</a>
+
+            {{/each}}
+
+        </div>
+    </div>
+</div>

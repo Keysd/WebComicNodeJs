@@ -1,0 +1,40 @@
+<div class="bg-gray-600 pb-16 -mb-16">
+    <div class="content container pt-0 tab:pt-4">
+        <div class="bg-slate-100 p-4 rounded-lg">
+            <div class="block">
+                <a href="" class="inline-block">Trang chủ</a>
+
+                <span class="mx-2">/</span>
+
+                <a href="{{replacePath comics.comicName.link '/truyen-tranh/' '/comic/'}}" class="">{{comics.comicName.name}}</a>
+
+                <span class="mx-2">/</span>
+
+                <a href="" class="">Chap {{comics.chap}}</a>
+            </div>
+            <div class="flex my-2 items-center">
+                <h1 class="text-xl">{{comics.comicName.name}}<span class="mx-2">-</span><span>Chap {{comics.chap}}</span></h1>
+                <div class="mx-2"></div>
+                {{! <span class="text-xs"> (Cập nhật lúc: 13:10 05/02/2021)</span> }}
+            </div>
+            <span class="text-sm">Do dữ liệu mình lấy từ trang web khác nên có server xem được server không xem được, mong các bạn thông cảm 😞.</span>
+            <div class="flex justify-center my-8">
+                <a href="{{comics.controls.prevChap}}" class="bg-nav-primary text-white py-2 px-4 rounded-sm w-28 inline-block whitespace-nowrap text-center"><span class="mx-auto">Chap Trước</span></a>
+                <span class="mx-2"></span>
+                <a href="{{comics.controls.nextChap}}" class="bg-nav-primary text-white py-2 px-4 rounded-sm w-28 inline-block whitespace-nowrap text-center"><span class="mx-auto">Chap Sau</span></a>
+            </div>
+        </div>
+        <div class="w-full mt-8">
+            {{#each comics.images}}
+                <img onerror="this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXsQ6pmoDNnTmsXteHxl7kejgCPEYAn5iVWQ&usqp=CAU'" class="mx-auto max-w-full" src="{{this.imgComics}}" data-original="https://truyenvua.com/3755/561/2.jpg?gf=hdfgdfg" alt="" />
+            {{/each}}
+        </div>
+        <div class="bg-slate-100 p-4 rounded-lg mt-4">
+            <div class="flex justify-center my-2">
+                <a href="{{comics.controls.prevChap}}" class="bg-nav-primary text-white py-2 px-4 rounded-sm w-28 inline-block whitespace-nowrap text-center"><span class="mx-auto">Chap Trước</span></a>
+                <span class="mx-2"></span>
+                <a href="{{comics.controls.nextChap}}" class="bg-nav-primary text-white py-2 px-4 rounded-sm w-28 inline-block whitespace-nowrap text-center"><span class="mx-auto">Chap Sau</span></a>
+            </div>
+        </div>
+    </div>
+</div>
