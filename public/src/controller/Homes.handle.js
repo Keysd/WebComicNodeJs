@@ -1,5 +1,4 @@
 const home = require('../model/home.model');
-var url = process.env.URL;
 
 class HomesController {
     static async index(req, res, next) {

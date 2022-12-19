@@ -1,6 +1,5 @@
 const axios = require('axios');
 const { JSDOM } = require('jsdom');
-var url = process.env.URL;
 
 class Model {
     static async getChaptersComic(path) {
